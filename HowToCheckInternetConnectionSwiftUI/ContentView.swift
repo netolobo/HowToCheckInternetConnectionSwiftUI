@@ -8,17 +8,27 @@
 import SwiftUI
 
 struct ContentView: View {
+    @Environment(NetworkMonitor.self) private var newtworkMonitor
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        VStack(spacing: 20) {
+            Text("Internet status:")
+                .font(.title)
+            
+            Image(systemName: newtworkMonitor.isConnected ? "wifi" : "wifi.slash")
+                    .font(.title)
+                    .foregroundStyle(newtworkMonitor.isConnected ? .green : .red)
+                
+            Text(newtworkMonitor.isConnected ? "Connected" : "Disconnected")
+                    .font(.title)
+                    .fontWeight(.bold)
+                    .foregroundStyle(newtworkMonitor.isConnected ? .green : .red)
+            }
         }
-        .padding()
-    }
+    
 }
 
 #Preview {
     ContentView()
+        .environment(NetworkMonitor())
 }

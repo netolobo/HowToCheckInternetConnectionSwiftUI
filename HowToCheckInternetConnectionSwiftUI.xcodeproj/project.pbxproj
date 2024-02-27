@@ -11,6 +11,7 @@
 		5AC041852B8E465F006C559B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC041842B8E465F006C559B /* ContentView.swift */; };
 		5AC041872B8E4662006C559B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AC041862B8E4662006C559B /* Assets.xcassets */; };
 		5AC0418A2B8E4662006C559B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AC041892B8E4662006C559B /* Preview Assets.xcassets */; };
+		5AC041912B8E46F5006C559B /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC041902B8E46F5006C559B /* NetworkMonitor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		5AC041842B8E465F006C559B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5AC041862B8E4662006C559B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5AC041892B8E4662006C559B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5AC041902B8E46F5006C559B /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				5AC041822B8E465F006C559B /* HowToCheckInternetConnectionSwiftUIApp.swift */,
 				5AC041842B8E465F006C559B /* ContentView.swift */,
+				5AC041902B8E46F5006C559B /* NetworkMonitor.swift */,
 				5AC041862B8E4662006C559B /* Assets.xcassets */,
 				5AC041882B8E4662006C559B /* Preview Content */,
 			);
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5AC041852B8E465F006C559B /* ContentView.swift in Sources */,
+				5AC041912B8E46F5006C559B /* NetworkMonitor.swift in Sources */,
 				5AC041832B8E465F006C559B /* HowToCheckInternetConnectionSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

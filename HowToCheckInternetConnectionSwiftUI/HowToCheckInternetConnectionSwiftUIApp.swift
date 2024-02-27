@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct HowToCheckInternetConnectionSwiftUIApp: App {
+    @State private var networkMonitor = NetworkMonitor()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environment(networkMonitor)
         }
     }
 }
